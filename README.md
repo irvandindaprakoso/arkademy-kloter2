@@ -36,7 +36,7 @@ class Arkademy{
         $this->pdo = $pdo;
     }
     public function view (){
-        $result  = $this->pdo->query("SELECT n.id, n.name, w.name as work, c.salary FROM name n, work w, category c WHERE n.id_work=w.id AND n.id_salary=c.id AND w.id_salary=c.id");
+        $result  = $this->pdo->query("SELECT n.id, n.name, w.name as work, c.salary FROM name n, work w, category c WHERE n.id_work=w.id AND n.id_salary=c.id");
             while($rows = $result->fetch(PDO::FETCH_OBJ))
                 $data[] = $rows;
             return $data;
