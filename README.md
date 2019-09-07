@@ -27,7 +27,7 @@ Test Online
 	}
 ```
 5. Membuat class yang berisi fungsi-fungsi dari web yang akan dibuat (**CRUD**)
-'''
+```
 
 class Arkademy{
     private $pdo;
@@ -94,10 +94,11 @@ class Arkademy{
     }
     
 }
-'''
+```
 
 6. langkah selanjutnya tinggal memanggil fungsi yang telah dibuat tadi, contoh:
-'''
+
+```
     require "database.php";
     require "Arkademy-class.php";
     $class_arkademy     = new Arkademy($pdo);
@@ -110,7 +111,8 @@ class Arkademy{
               <td><?=$data->salary?></td>
           </tr>
     endforeach
-'''
+```
+
 7. lakukan hal yang sama untuk menambah, menghapus dan mengubah data
 8. Berikut screenshot hasil akhir pembuatan web
 ![Screenshot View Data](https://github.com/irvandindaprakoso/arkademy/blob/master/view_data.png)
